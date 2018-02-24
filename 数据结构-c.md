@@ -2,115 +2,114 @@
 ===
 <!--GFM-TOC -->
 ## 目录
-* [头文件+预定义](#0)
-* [线性表](#1)
-    * [顺序表](#1.1)
-        * [顺序表存储结构](#1.1.1)
-        * [顺序表的初始化](#1.1.2)
-        * [顺序表的建立](#1.1.3)
-        * [顺序表按照位序查找元素的值](#1.1.4)
-        * [顺序表中按照结点的值查找结点的位序](#1.1.5)
-        * [顺序表数据元素的插入](#1.1.6)
-        * [顺序表数据元素的删除](#1.1.7)
-        * [顺序表数据元素的遍历输出](#1.1.8)
-        * [顺序表的销毁](#1.1.9)
-    * [单链表](#1.2)
-        * [单链表存储结构](#1.2.1)
-        * [单链表的初始化](#1.2.2)
-        * [单链表的建立（头插法）](#1.2.3)
-        * [单链表的建立（尾插法）](#1.2.4)
-        * [单链表的遍历输出](#1.2.5)
-        * [单链表结点的插入](#1.2.6)
-        * [单链表结点的删除](#1.2.7)
-        * [单链表中按照结点的值查找结点的位序](#1.2.8)
-        * [单链表中按照结点的位序返回结点的值](#1.2.9)
-        * [单链表的销毁](#1.2.10)
-        * [求单链表的长度](#1.2.11)
-        * [两个单链表的归并](#1.2.12)
-        * [递归实现链表的遍历输出（正序）](#1.2.13)
-        * [递归实现链表的遍历输出（逆序)](#1.2.14)
-        * [递归实现链表的逆序](#1.2.15)
-        * [递归求链表的长度](#1.2.16)
-* [顺序栈](#2)
-    * [顺序栈存储结构](#2.1)
-    * [顺序栈的初始化](#2.2)
-    * [顺序栈的建立](#2.3)
-    * [判断栈是否为空](#2.4)
-    * [取栈顶元素](#2.5)
-    * [元素进栈](#2.6)
-    * [元素出栈](#2.7)
-    * [计算栈中数据元素的个数](#2.8)
-    * [遍历顺序栈](#2.9)
-* [循环队列](#3)
-    * [循环队列存储结构](#3.1)
-    * [循环队列的初始化](#3.2)
-    * [循环队列的建立](#3.3)
-    * [判断队列是否为空](#3.4)
-    * [取队首元素](#3.5)
-    * [元素入队](#3.6)
-    * [元素出队](#3.7)
-    * [计算队列中数据元素的个数](#3.8)
-    * [遍历循环队列](#3.9)
-* [二叉树](#4)
-    * [二叉树存储结构](#4.1)
-    * [二叉树的创建](#4.2)
-    * [二叉树的遍历（前序）](#4.3)
-    * [二叉树的遍历（中序）](#4.4)
-    * [二叉树的遍历（后序）](#4.5)
-    * [二叉树的遍历（层次）](#4.6)
-    * [求二叉树高度](#4.7)
-    * [交换二叉树的左右子树](#4.8)
-    * [求二叉树的结点个数](#4.9)
-    * [求二叉树的叶子数](#4.10)
-    * [按照目录形式输出二叉树](#4.11)
-    * [二叉树的销毁](#4.12)
-* [树](#5)
-    * [树的存储结构](#5.1)
-    * [求树的深度](#5.2)
-    * [树的后根遍历](#5.3)
-* [查找表](#6)
-    * [顺序表](#6.1)
-        * [查找表的存储结构](#6.1.1)
-        * [顺序查找法](#6.1.2)
-        * [折半查找法](#6.1.3)
+* [头文件+预定义](#头文件预定义)
+* [线性表](#线性表)
+    * [顺序表](#顺序表)
+        * [顺序表存储结构](#顺序表存储结构)
+        * [顺序表的初始化](#顺序表的初始化)
+        * [顺序表的建立](#顺序表的建立)
+        * [顺序表按照位序查找元素的值](#顺序表按照位序查找元素的值)
+        * [顺序表中按照结点的值查找结点的位序](#顺序表中按照结点的值查找结点的位序)
+        * [顺序表数据元素的插入](#顺序表数据元素的插入)
+        * [顺序表数据元素的删除](#顺序表数据元素的删除)
+        * [顺序表数据元素的遍历输出](#顺序表数据元素的遍历输出)
+        * [顺序表的销毁](#顺序表的销毁)
+    * [单链表](#单链表)
+        * [单链表存储结构](#单链表存储结构)
+        * [单链表的初始化](#单链表的初始化)
+        * [单链表的建立（头插法）](#单链表的建立头插法)
+        * [单链表的建立（尾插法）](#单链表的建立尾插法)
+        * [单链表的遍历输出](#单链表的遍历输出)
+        * [单链表结点的插入](#单链表结点的插入)
+        * [单链表结点的删除](#单链表结点的删除)
+        * [单链表中按照结点的值查找结点的位序](#单链表中按照结点的值查找结点的位序)
+        * [单链表中按照结点的位序返回结点的值](#单链表中按照结点的位序返回结点的值)
+        * [单链表的销毁](#单链表的销毁)
+        * [求单链表的长度](#求单链表的长度)
+        * [两个单链表的归并](#两个单链表的归并)
+        * [递归实现链表的遍历输出（正序）](#递归实现链表的遍历输出正序)
+        * [递归实现链表的遍历输出（逆序）](#递归实现链表的遍历输出逆序)
+        * [递归实现链表的逆序](#递归实现链表的逆序)
+        * [递归求链表的长度](#递归求链表的长度)
+* [顺序栈](#顺序栈)
+    * [顺序栈存储结构](#顺序栈存储结构)
+    * [顺序栈的初始化](#顺序栈的初始化)
+    * [顺序栈的建立](#顺序栈的建立)
+    * [判断栈是否为空](#判断栈是否为空)
+    * [取栈顶元素](#取栈顶元素)
+    * [元素进栈](#元素进栈)
+    * [元素出栈](#元素出栈)
+    * [计算栈中数据元素的个数](#计算栈中数据元素的个数)
+    * [遍历顺序栈](#遍历顺序栈)
+* [循环队列](#循环队列)
+    * [循环队列存储结构](#循环队列存储结构)
+    * [循环队列的初始化](#循环队列的初始化)
+    * [循环队列的建立](#循环队列的建立)
+    * [判断队列是否为空](#判断队列是否为空)
+    * [取队首元素](#取队首元素)
+    * [元素入队](#元素入队)
+    * [元素出队](#元素出队)
+    * [计算队列中数据元素的个数](#计算队列中数据元素的个数)
+    * [遍历循环队列](#遍历循环队列)
+* [二叉树](#二叉树)
+    * [二叉树存储结构](#二叉树存储结构)
+    * [二叉树的创建](#二叉树的创建)
+    * [二叉树的遍历（前序）](#二叉树的遍历前序)
+    * [二叉树的遍历（中序）](#二叉树的遍历中序)
+    * [二叉树的遍历（后序）](#二叉树的遍历后序)
+    * [二叉树的遍历（层次）](#二叉树的遍历层次)
+    * [求二叉树高度](#求二叉树高度)
+    * [交换二叉树的左右子树](#交换二叉树的左右子树)
+    * [求二叉树的结点个数](#求二叉树的结点个数)
+    * [求二叉树的叶子数](#求二叉树的叶子数)
+    * [按照目录形式输出二叉树](#按照目录形式输出二叉树)
+    * [二叉树的销毁](#二叉树的销毁)
+* [树](#树)
+    * [树的存储结构](#树的存储结构)
+    * [求树的深度](#求树的深度)
+    * [树的后根遍历](#树的后根遍历)
+* [查找表](#查找表)
+    * [顺序表](#顺序表)
+        * [查找表的存储结构](#查找表的存储结构)
+        * [顺序查找法](#顺序查找法)
+        * [折半查找法](#折半查找法)
     * 二叉查找树
     * 二叉平衡树
     * 哈希表
-* [排序表](#7)
-    * [排序表的存储结构](#7.1)
-    * [插入排序](#7.2)
-        * [直接插入排序](#7.2.1)
-        * [折半排序](#7.2.2)
-        * [希尔排序](#7.2.3)
-    * [交换排序](#7.3)
-        * [起泡排序](#7.3.1)
-        * [快速排序](#7.3.2)
-    * [选择排序](#7.4)
-        * [简单选择排序](#7.4.1)
-        * [堆排序](#7.4.2)
+* [排序表](#排序表)
+    * [排序表的存储结构](#排序表的存储结构)
+    * [插入排序](#插入排序)
+        * [直接插入排序](#直接插入排序)
+        * [折半排序](#折半排序)
+        * [希尔排序](#希尔排序)
+    * [交换排序](#交换排序)
+        * [起泡排序](#起泡排序)
+        * [快速排序](#快速排序)
+    * [选择排序](#选择排序)
+        * [简单选择排序](#简单选择排序)
+        * [堆排序](#堆排序)
     * 归并排序
     * 基数排序
-* [图](#8)
-    * [存储结构](#8.1)
-        * [邻接矩阵](#8.1.1)
-        * [邻接表](#8.1.2)
+* [图](#图)
+    * [存储结构](#存储结构)
+        * [邻接矩阵](#邻接矩阵)
+        * [邻接表](#邻接表)
         * 有向图十字链表
         * 无向图的邻接多重表
-    * [深度优先遍历(DFS)](#8.2)
-        * [邻接矩阵](#8.2.1)
-        * [邻接表](#8.2.2)
+    * [深度优先遍历(DFS)](#深度优先遍历dfs)
+        * [邻接矩阵](#邻接矩阵)
+        * [邻接表](#邻接表)
     * 广度优先遍历(BFS)
-    * [构造最小生成树](#8.4)
-        * [Prim算法](#8.4.1)
-        * [Kruskal算法](#8.4.2)
-    * [有向无环图](#8.5)
-        * [拓扑排序](#8.5.1)
-        * [关键路径](#8.5.2)
-    * [最短路径](#8.6)
-        * [Dijkstra算法](#8.6.1)
-        * [Floyd算法](#8.6.2)
+    * [构造最小生成树](#构造最小生成树)
+        * [Prim算法](#prim算法)
+        * [Kruskal算法](#kruskal算法)
+    * [有向无环图](#有向无环图)
+        * [拓扑排序](#拓扑排序)
+        * [关键路径](#关键路径)
+    * [最短路径](#最短路径)
+        * [Dijkstra算法](#dijkstra算法)
+        * [Floyd算法](#floyd算法)
 <!--GFM-TOC-->
-<span id="0"></span>
 ## 头文件+预定义
 ```c
 #include<stdio.h>
@@ -122,11 +121,11 @@
 #define OVERFLOW -2
 typedef int status;
 ```
-<span id="1"></span>
+
 ## 线性表
-<span id="1.1"></span>
+
 **顺序表**
-<span id="1.1.1"></span>
+
 * 顺序表存储结构
 ```c
 #define LIST_INIT_SIZE 100
@@ -139,7 +138,7 @@ typedef struct
     int listsize;
 }SqList;
 ```
-<span id="1.1.2"></span>
+
 * 顺序表的初始化
 ```c
 Status InitSqList(SqList &L)
@@ -152,7 +151,7 @@ Status InitSqList(SqList &L)
     return OK;
 }
 ```
-<span id="1.1.3"></span>
+
 * 顺序表的建立
 ```c
 Status InitSqList(SqList &L,int n)
@@ -167,7 +166,7 @@ Status InitSqList(SqList &L,int n)
     return OK;
 }
 ```
-<span id="1.1.4"></span>
+
 * 顺序表按照位序查找元素的值
 ```c
 Status GetSqList(SqList L,int n,ElemType &e)
@@ -178,7 +177,7 @@ Status GetSqList(SqList L,int n,ElemType &e)
     return  OK;
 }
 ```
-<span id="1.1.5"></span>
+
 * 顺序表中按照结点的值查找结点的位序
 ```c
 int SearchSqList(SqList L,int x)
@@ -192,7 +191,7 @@ int SearchSqList(SqList L,int x)
         return 0;
 }
 ```
-<span id="1.1.6"></span>
+
 * 顺序表数据元素的插入
 ```c
 Status InsertSqList(SqList &L,int n, ElemType e) 
@@ -220,7 +219,7 @@ Status InsertSqList(SqList &L,int n, ElemType e)
     return OK;
 }
 ```
-<span id="1.1.7"></span>
+
 * 顺序表数据元素的删除
 ```c
 Status DeleteSqList(SqList &L,int n, ElemType &e) 
@@ -235,7 +234,7 @@ Status DeleteSqList(SqList &L,int n, ElemType &e)
     return OK;
 }
 ```
-<span id="1.1.8"></span>
+
 * 顺序表数据元素的遍历输出
 ```c
 Status VisitSqList(SqList L)
@@ -247,7 +246,7 @@ Status VisitSqList(SqList L)
     return OK;
 }
 ```
-<span id="1.1.9"></span>
+
 * 顺序表的销毁
 ```c
 Status DestroySqList(SqList &L)
@@ -260,9 +259,9 @@ Status DestroySqList(SqList &L)
    return OK;
 }
 ```
-<span id="1.2"></span>
+
 **单链表**
-<span id="1.2.1"></span>
+
 * 单链表存储结构
 ```c
 typedef int ElemType;
@@ -272,7 +271,7 @@ typedef struct LNode
     struct LNode *next;
 }LNode,*LinkList;
 ```
-<span id="1.2.2"></span>
+
 * 单链表的初始化
 ```c
 Status InitList(LinkList &L)                 
@@ -282,7 +281,7 @@ Status InitList(LinkList &L)
     return OK;
 }
 ```
-<span id="1.2.3"></span>
+
 * 单链表的建立（头插法）
 ```c
 void CreateList(LinkList &L,int n)
@@ -300,7 +299,7 @@ void CreateList(LinkList &L,int n)
    }
 }
 ```
-<span id="1.2.4"></span>
+
 * 单链表的建立（尾插法）
 ```c
 void CreateList(LinkList &L,int n)
@@ -319,7 +318,7 @@ void CreateList(LinkList &L,int n)
    }
 }
 ```
-<span id="1.2.5"></span>
+
 * 单链表的遍历输出
 ```c
 void VisitList(LinkList L)
@@ -333,7 +332,7 @@ void VisitList(LinkList L)
     printf("\n");
 }
 ```
-<span id="1.2.6"></span>
+
 * 单链表结点的插入
 ```c
 Status InsertList(LinkList&L,int i,ElemType e)
@@ -354,7 +353,7 @@ Status InsertList(LinkList&L,int i,ElemType e)
     return OK;
 }
 ```
-<span id="1.2.7"></span>
+
 * 单链表结点的删除
 ```c
 Status DeleteList(LinkList&L,int i,ElemType &e)
@@ -376,7 +375,7 @@ Status DeleteList(LinkList&L,int i,ElemType &e)
     return OK;
   }
  ```
-<span id="1.2.8"></span>
+
 * 单链表中按照结点的值查找结点的位序
 ```c
 Status LocateList(LinkList L,ElemType e)
@@ -394,7 +393,7 @@ Status LocateList(LinkList L,ElemType e)
         return i;
 }
 ```
-<span id="1.2.9"></span>
+
 * 单链表中按照结点的位序返回结点的值
 ```c
 Status GetList(LinkList L,int i,ElemType &e)
@@ -412,7 +411,7 @@ Status GetList(LinkList L,int i,ElemType &e)
     return OK;
 }
 ```
-<span id="1.2.10"></span>
+
 * 单链表的销毁
 ```c
 Status DestroyList(LinkList &L)
@@ -427,7 +426,7 @@ Status DestroyList(LinkList &L)
    }
 }
 ```
-<span id="1.2.11"></span>
+
 * 求单链表的长度
 ```c
 int  ListLength(LinkList L)
@@ -442,7 +441,7 @@ int  ListLength(LinkList L)
     return i;
 }
 ```
-<span id="1.2.12"></span>
+
 * 两个单链表的归并
 ```c
 void  MergeList_L(LinkList &La,LinkList &Lb,LinkList &Lc)
@@ -469,7 +468,7 @@ void  MergeList_L(LinkList &La,LinkList &Lb,LinkList &Lc)
     free(Lb);
 }
 ```
-<span id="1.2.13"></span>
+
 * 递归实现链表的遍历输出（正序）
 ```c
 void PrintList(LinkList L)
@@ -481,7 +480,7 @@ void PrintList(LinkList L)
     }
 }
 ```
-<span id="1.2.14"></span>
+
 * 递归实现链表的遍历输出（逆序)
 ```c
 void PrintList(LinkList L)
@@ -493,7 +492,7 @@ void PrintList(LinkList L)
     }
 }
 ```
-<span id="1.2.15"></span>
+
 * 递归实现链表的逆序
 ```c
 LinkList reverse(LinkList p)
@@ -511,7 +510,7 @@ LinkList reverse(LinkList p)
     }
 }
 ```
-<span id="1.2.16"></span>
+
 * 递归求链表的长度
 ```c
 int ListLength_2(LinkList L)
@@ -522,9 +521,9 @@ int ListLength_2(LinkList L)
         return 1+ListLength(L->next);
 }
 ```
-<span id="2"></span>
+
 ## 顺序栈
-<span id="2.1"></span>
+
 * 顺序栈存储结构
 ```c
 #define STACK_INIT_SIZE 100
@@ -537,7 +536,7 @@ typedef struct
     int stacksize;
 }SqStack;
 ```
-<span id="2.2"></span>
+
 * 顺序栈的初始化
 ```c
 Status InitStack(SqStack &S)
@@ -550,7 +549,7 @@ Status InitStack(SqStack &S)
     return OK;
 }
 ```
-<span id="2.3"></span>
+
 * 顺序栈的建立
 ```c
 Status InitStack(SqStack &S,int n)
@@ -565,7 +564,7 @@ Status InitStack(SqStack &S,int n)
     return OK;
 }
 ```
-<span id="2.4"></span>
+
 * 判断栈是否为空
 ```c
 Status StackEmpty(SqStack S)
@@ -575,7 +574,7 @@ Status StackEmpty(SqStack S)
     return FALSE;
 }
 ```
-<span id="2.5"></span>
+
 * 取栈顶元素
 ```c
 Status GetTop(SqStack S,SElemType &e)
@@ -586,7 +585,7 @@ Status GetTop(SqStack S,SElemType &e)
     return OK;
 }
 ```
-<span id="2.6"></span>
+
 * 元素进栈
 ```c
 Status Push(SqStack &S,SElemType e)
@@ -607,7 +606,7 @@ Status Push(SqStack &S,SElemType e)
     return OK;
 }
 ```
-<span id="2.7"></span>
+
 * 元素出栈
 ```c
 Status Pop(SqStack &S,SElemType &e)
@@ -619,7 +618,7 @@ Status Pop(SqStack &S,SElemType &e)
     return OK;
 }
 ```
-<span id="2.8"></span>
+
 * 计算栈中数据元素的个数
 ```c
 int StackLength(SqStack S)
@@ -627,7 +626,7 @@ int StackLength(SqStack S)
     return S.top-S.base;
 }
 ```
-<span id="2.9"></span>
+
 * 遍历顺序栈
 ```c
 Status StackTraverse(SqStack S,Status (*Visit)(SElemType e))
@@ -641,9 +640,9 @@ Status StackTraverse(SqStack S,Status (*Visit)(SElemType e))
     return OK;
 }
 ```
-<span id="3"></span>
+
 ## 循环队列
-<span id="3.1"></span>
+
 * 循环队列存储结构
 ```c
 #define MAXQSIZE 100
@@ -655,7 +654,7 @@ typedef struct
     int front;
 } SqQueue;
 ```
-<span id="3.2"></span>
+
 * 循环队列的初始化
 ```c
 Status InitQueue(SqQueue &Q)
@@ -667,7 +666,7 @@ Status InitQueue(SqQueue &Q)
     return OK;
 }
 ```
-<span id="3.3"></span>
+
 * 循环队列的建立
 ```c
 Status InitQueue(SqQueue &Q,int n)
@@ -680,7 +679,7 @@ Status InitQueue(SqQueue &Q,int n)
     return OK;
 }
 ```
-<span id="3.4"></span>
+
 * 判断队列是否为空
 ```c
 Status QueueEmpty(SqQueue Q)
@@ -690,7 +689,7 @@ Status QueueEmpty(SqQueue Q)
     return FALSE;
 }
 ```
-<span id="3.5"></span>
+
 * 取队首元素
 ```c
 Status GetHead(SqQueue Q,QElemType &e)
@@ -701,7 +700,7 @@ Status GetHead(SqQueue Q,QElemType &e)
     return OK;
 }
 ```
-<span id="3.6"></span>
+
 * 元素入队
 ```c
 Status EnQueue(SqQueue &Q,QElemType e)
@@ -713,7 +712,7 @@ Status EnQueue(SqQueue &Q,QElemType e)
     return OK;
 }
 ```
-<span id="3.7"></span>
+
 * 元素出队
 ```c
 Status DeQueue(SqQueue &Q,QElemType &e)
@@ -725,7 +724,7 @@ Status DeQueue(SqQueue &Q,QElemType &e)
     return OK;
 } 
 ```
-<span id="3.8"></span>
+
 * 计算队列中数据元素的个数
 ```c
 int QueueLength(SqQueue Q)
@@ -733,7 +732,7 @@ int QueueLength(SqQueue Q)
     return (Q.rear-Q.front+MAXQSIZE)%MAXQSIZE;
 } 
 ```
-<span id="3.9"></span>
+
 * 遍历循环队列
 ```c
 Status QueueTraverse(SqQueue Q,Status (*Visit)(QElemType e))
@@ -747,9 +746,9 @@ Status QueueTraverse(SqQueue Q,Status (*Visit)(QElemType e))
     return OK;
 }
 ```
-<span id="4"></span>
+
 ## 二叉树
-<span id="4.1"></span>
+
 * 二叉树存储结构
 ```c
 typedef char TElemType;
@@ -759,7 +758,7 @@ typedef struct BiTNode
     struct BiTNode *lchild,*rchild;
 }BiTNode ,*BiTree;
 ```
-<span id="4.2"></span>
+
 * 二叉树的创建
 ```c
 Status CreateBiTree(BiTree &T)
@@ -780,7 +779,7 @@ Status CreateBiTree(BiTree &T)
     return OK;
 }
 ```
-<span id="4.3"></span>
+
 * 二叉树的遍历（前序）
 ```c
 Status PreOrderTraverse(BiTree T,Status (*Visit)(TElemType))
@@ -797,7 +796,7 @@ Status PreOrderTraverse(BiTree T,Status (*Visit)(TElemType))
         return OK;
 }
 ```
-<span id="4.4"></span>
+
 * 二叉树的遍历（中序）
 ```c
 Status InOrderTraverse(BiTree T,Status (*Visit)(TElemType))
@@ -814,7 +813,7 @@ Status InOrderTraverse(BiTree T,Status (*Visit)(TElemType))
         return OK;
 }
 ```
-<span id="4.5"></span>
+
 * 二叉树的遍历（后序）
 ```c
 Status PostOrderTraverse(BiTree T,Status (*Visit)(TElemType))
@@ -831,7 +830,7 @@ Status PostOrderTraverse(BiTree T,Status (*Visit)(TElemType))
         return OK;
 }
 ```
-<span id="4.6"></span>
+
 * 二叉树的遍历（层次）
 ```c
 void LevelOrderTraverse(BiTree T,Status (*Visit)(TElemType))
@@ -855,7 +854,7 @@ void LevelOrderTraverse(BiTree T,Status (*Visit)(TElemType))
     }
 }
 ```
-<span id="4.7"></span>
+
 * 求二叉树高度
 ```c
 int TreeDepth(BiTree T)
@@ -872,7 +871,7 @@ int TreeDepth(BiTree T)
     return depth+1;
 }
 ```
-<span id="4.8"></span>
+
 * 交换二叉树的左右子树
 ```c
 void Exchange_Tree(BiTree BT)
@@ -888,7 +887,7 @@ void Exchange_Tree(BiTree BT)
      }
 }
 ```
-<span id="4.9"></span>
+
 * 求二叉树的结点个数
 ```c
 void CountNode(BiTree T,int &count)
@@ -901,7 +900,7 @@ void CountNode(BiTree T,int &count)
    }
 }
 ```
-<span id="4.10"></span>
+
 * 求二叉树的叶子数
 ```c
 void CountLeaf(BiTree T,int &count)
@@ -916,7 +915,7 @@ void CountLeaf(BiTree T,int &count)
     }
 }
 ```
-<span id="4.11"></span>
+
 * 按照目录形式输出二叉树
 ```c
 Status PrintTree(BiTree bt,int nLayer)
@@ -933,7 +932,7 @@ Status PrintTree(BiTree bt,int nLayer)
     return OK;
 }
 ```
-<span id="4.12"></span>
+
 * 二叉树的销毁
 ```c
 void DestroyBiTree(BiTree &T)
@@ -947,9 +946,9 @@ void DestroyBiTree(BiTree &T)
     }
 }
 ```
-<span id="5"></span>
+
 ## 树
-<span id="5.1"></span>
+
 * 树的存储结构
 ```c
 typedef char TElemType;
@@ -959,7 +958,7 @@ typedef struct CSNode
     struct CSNode *firstchild,*nextsibling;
 }CSNode,*CSTree;
 ```
-<span id="5.2"></span>
+
 * 求树的深度
 ```c
 int TreeDepth(CSTree &T)
@@ -981,7 +980,7 @@ int TreeDepth(CSTree &T)
       return maxdep+1;
 }
 ```
-<span id="5.3"></span>
+
 * 树的后根遍历
 ```c
 Status InOrderTraverse_CS(CSTree T,Status (*Visit)(TElemType e))
@@ -998,11 +997,11 @@ Status InOrderTraverse_CS(CSTree T,Status (*Visit)(TElemType e))
         return OK;
 }
 ```
-<span id="6"></span>
+
 ## 查找表
-<span id="6.1"></span>
+
 **顺序表**
-<span id="6.1.1"></span>
+
 * 查找表的存储结构
 ```c
 typedef int KeyType;
@@ -1021,7 +1020,7 @@ typedef struct
     int length;
 }SSTable;
 ```
-<span id="6.1.2"></span>
+
 * 顺序查找法
 ```c
 int Search_Seq(SSTable ST,KeyType key)
@@ -1032,7 +1031,7 @@ int Search_Seq(SSTable ST,KeyType key)
         return i;
 }
 ```
-<span id="6.1.3"></span>
+
 * 折半查找法
 ```c
 int Search_Bin(SSTable ST,KeyType key)
@@ -1058,9 +1057,9 @@ int Search_Bin(SSTable ST,KeyType key)
 **二叉平衡树**
 
 **哈希表**
-<span id="7"></span>
+
 ## 排序表
-<span id="7.1"></span>
+
 * 排序表的存储结构
 ```c
 typedef int KeyType;
@@ -1080,9 +1079,9 @@ typedef struct
     int length;
 }SqList;
 ```
-<span id="7.2"></span>
+
 **插入排序**
-<span id="7.2.1"></span>
+
 * 直接插入排序
 ```c
 void InsertionSort(SqList &L) 
@@ -1099,7 +1098,7 @@ void InsertionSort(SqList &L)
         }
 }
 ```
-<span id="7.2.2"></span>
+
 * 折半排序
 ```c
 void BiInsertionSort(SqList &L)
@@ -1124,7 +1123,7 @@ void BiInsertionSort(SqList &L)
     }
 }
 ```
-<span id="7.2.3"></span>
+
 * 希尔排序
 ```c
 void ShellInsert(SqList &L,int dk)
@@ -1148,9 +1147,9 @@ void ShellSort(SqList &L,int dlta[],int t)
         ShellInsert(L,dlta[k]);
 }
 ```
-<span id="7.3"></span>
+
 **交换排序**
-<span id="7.3.1"></span>
+
 * 起泡排序
 ```c
 void BubbleSort(SqList &L)
@@ -1174,7 +1173,7 @@ void BubbleSort(SqList &L)
     }
 }
 ```
-<span id="7.3.2"></span>
+
 * 快速排序
 ```c
 int Partition(SqList &L,int low,int high)
@@ -1209,9 +1208,9 @@ void QuickSort(SqList &L)
     Qsort(L,1,L.length); 
 }
 ```
-<span id="7.4"></span>
+
 **选择排序**
-<span id="7.4.1"></span>
+
 * 简单选择排序
 ```c
 void SelectSort(SqList &L)
@@ -1234,7 +1233,7 @@ void SelectSort(SqList &L)
     }
 }
 ```
-<span id="7.4.2"></span>
+
 * 堆排序
 ```c
 void HeapAdjust(SqList &H,int s,int m)
@@ -1271,11 +1270,11 @@ void HeapSort(HeapType &H)
 **归并排序**
 
 **基数排序**
-<span id="8"></span>
+
 ## 图
-<span id="8.1"></span>
+
 **存储结构**
-<span id="8.1.1"></span>
+
 * 邻接矩阵
 ```c
 #define INFINITY INT_MAX;// 最大值∞
@@ -1294,7 +1293,7 @@ typedef struct
     GraphKind kind;// 图的种类标志
 }MGraph;
 ```
-<span id="8.1.2"></span>
+
 * 邻接表
 ```c
 #define MAX_VERTEX_NUM 20
@@ -1320,9 +1319,9 @@ typedef struct
 
 * 无向图的邻接多重表
 
-<span id="8.2"></span>
+
 **深度优先遍历(DFS)**
-<span id="8.2.1"></span>
+
 * 邻接矩阵
 ```c
 void DFS(MGraph G,int v)
@@ -1337,7 +1336,7 @@ void DFS(MGraph G,int v)
     }
 }
 ```
-<span id="8.2.2"></span>
+
 * 邻接表
 ```c
 void DFS(ALGraph G,int v)
@@ -1355,29 +1354,29 @@ void DFS(ALGraph G,int v)
 ```
 **广度优先遍历(BFS)**
 
-<span id="8.4"></span>
+
 **构造最小生成树**
-<span id="8.4.1"></span>
+
 * Prim算法
     * TE是最小生成树中边的集合；
     * 初始令U={u<sub>0</sub>},(u<sub>0</sub>&isin;V),TE=&empty;；
     * 在所有u&isin;U,v&isin;V-U的边(u,v)&isin;E中，找一条代价最小的边(u<sub>0</sub>,v<sub>0</sub>)；
     * 将(u<sub>0</sub>,v<sub>0</sub>)并入集合TE，同时v<sub>0</sub>并入U；重复上述操作直至U=V为止，则T=(V,{TE})为最小生成树。
-<span id="8.4.2"></span>
+
 * Kruskal算法
     *   初始状态为只有n个顶点而无边的非连通图T=(V,{&empty;})，每个顶点自成一个连通分量；
     * 在E中选取代价最小的边，若该边依附的顶点落在T中不同的连通分量上，则将此边加入到T中；否则，舍去此边，选取下一条代价最小的边；
     * 依此类推，直至T中所有顶点都在同一连通分量上为止。
 
-<span id="8.5"></span>
+
 **有向无环图**
-<span id="8.5.1"></span>
+
 * 拓扑排序
     * 从图中选择一个入度为0的顶点输出；
     * 从图中删除该顶点及源自该顶点的所有弧；
     * 重复以上两步，直至全部顶点都输出，拓扑排序顺利完成；
     * 否则，若剩有入度非0的顶点，说明图中有环，拓扑排序不能进行。
-<span id="8.5.2"></span>
+
 * 关键路径
 
     AOE网
@@ -1385,15 +1384,15 @@ void DFS(ALGraph G,int v)
     * 关键路径：路径长度最长的路径。
     * 关键活动：关键路径上的活动，即这些活动的时间延迟或提前会影响整个工程工期的延迟或提前。
 
-<span id="8.6"></span>
+
 **最短路径**
-<span id="8.6.1"></span>
+
 * Dijkstra算法
     * (1) 初始时,S只包含源点,即S={v},v的距离为0。U包含除v外的其他顶点,U中顶点u距离为边上的权(若v与u有边<v,u>)或∞(若u不是v的出边邻接点)。
     * (2) 从U中选取一个距离v最小的顶点k,把k加入S中(该选定的距离就是v到k的最短路径长度)。
     * (3) 以k为新考虑的中间点,修改U中各顶点的距离：若从源点v到顶点u(u∈U)的距离(经过顶点k)比原来距离(不经过顶点k)短,则修改顶点u的距离值,修改后的距离值的顶点k的距离加上边<k,u>上的权。
     * (4) 重复步骤(2)和(3)直到所有顶点都包含在S中。
-<span id="8.6.2"></span>
+
 * Floyd算法
     * 从图的带权邻接矩阵G.arcs出发，
    假设求顶点V<sub>i</sub>到V<sub>j</sub>的最短路径。如果从V<sub>i</sub>到V<sub>j</sub>有弧，则从V<sub>i</sub>到V<sub>j</sub>存在一条长度为G.arcs[i][j]的路径，但该路径是否一定是最短路径，还需要进行n次试探。
